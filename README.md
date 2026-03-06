@@ -1,12 +1,24 @@
-# React + Vite
+# Orbital ISS Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Real-time Satellite Tracking & 3D Visualization System**
 
-Currently, two official plugins are available:
+## Overview
+This project is a high-fidelity 3D web application designed to track the International Space Station (ISS) in real-time. By combining orbital mechanics models with modern web graphics, it provides an immersive way to visualize the ISS's current position, predicted path, and telemetry data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+- **Real-time Propagation**: Fetches live TLE (Two-Line Element) data and uses the SGP4 algorithm to calculate precise orbital positions.
+- **3D Visualization**: Custom Earth model built with **Three.js**, featuring high-resolution textures, atmosphere scattering, and real-time lighting.
+- **Dynamic Orbit**: Renders the future path of the ISS, accounting for Earth's rotation and orbital inclination.
+- **Live Telemetry**: Dashboard showing altitude, ground speed, and exact lat/long coordinates.
 
-## Expanding the ESLint configuration
+## Tech Stack
+- **Frontend**: React.js / Vite
+- **3D Engine**: Three.js (React Three Fiber)
+- **Math & Physics**: SGP4.js for orbital propagation
+- **Styling**: Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development
+
+```bash
+# Clone the repository
+git clone [https://github.com/NicolasAdamczyk/orbital-iss-visualizer](https://github.com/NicolasAdamczyk/orbital-iss-visualizer)
